@@ -1,0 +1,227 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Background section",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6426485300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on homepage",
+            "match": {
+              "location": "uniform.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-27T04:41:37.429Z",
+        "line": 14,
+        "name": "Login with unauthorized user",
+        "description": "",
+        "id": "uniform-sales-page;login-with-unauthorized-user;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 149947400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enter invalid username \"amit\" and password \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"amit\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"123456\"",
+                  "offset": 48
+                }
+              ],
+              "location": "uniform.user_enter_invalid_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 399904600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on Submit button",
+            "match": {
+              "location": "uniform.user_click_on_Submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11786800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "validation message appears",
+            "match": {
+              "location": "uniform.validation_message_appears()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signin"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Background section",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5137835900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on homepage",
+            "match": {
+              "location": "uniform.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-27T04:41:44.422Z",
+        "line": 29,
+        "name": "Login with authorized user",
+        "description": "",
+        "id": "uniform-sales-page;login-with-authorized-user;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1611565600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enter valid username \"admin\" and password \"Admin@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Admin@123\"",
+                  "offset": 47
+                }
+              ],
+              "location": "uniform.user_enter_valid_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2087875200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user click on catalog",
+            "match": {
+              "location": "uniform.user_click_on_catalogue()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2058796200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click on Sales",
+            "match": {
+              "location": "uniform.user_click_on_Sales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 485460300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user click on Returns",
+            "match": {
+              "location": "uniform.user_click_on_Returns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109206000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user type customer name",
+            "match": {
+              "location": "uniform.user_type_customer_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2513771300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click on Filter button result is displayed",
+            "match": {
+              "location": "uniform.click_on_Filter_button_result_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 930006100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user clicks on logout",
+            "match": {
+              "location": "uniform.user_clicks_on_logout()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signin"
+          }
+        ]
+      }
+    ],
+    "name": "Uniform Sales page",
+    "description": "",
+    "id": "uniform-sales-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/login.feature",
+    "tags": []
+  }
+]
